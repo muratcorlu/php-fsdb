@@ -33,7 +33,7 @@ class fsdb {
             }
         }
             
-        return $response;
+        return file_put_contents($file, serialize($data)) === false ? false : $id;;
     } 
     
     function save($collection, $data) {
