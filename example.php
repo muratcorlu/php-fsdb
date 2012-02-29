@@ -4,7 +4,7 @@ require('fsdb.php');
 
 $db = new fsdb('db');
 
-$person = array('name'=> 'Murat', 'children' => array('Hasan', 'Zeki', 'Zehra'));
+$person = array('name'=> 'Murat', 'children' => array('Hasan', 'Ali', 'Zehra'));
 
 $id = $db->save('people', $person);
 
